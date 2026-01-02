@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerija – LEGO klub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        header {
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .banner img {
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        nav {
+            background: #333;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+
+        main {
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 0 20px 20px;
+            padding: 15px;
+        }
+
+        main h1 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 30%;
+            border: 2px solid #ccc;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        img[data-set="city"] {
+            border-color: blue;
+        }
+
+        img[data-set="technic"] {
+            border-color: green;
+        }
+
+        img[data-set="friends"] {
+            border-color: pink;
+        }
+
+        img[src$=".jpg"] {
+            border-style: solid;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="banner">
+        <img src="lego_banner.jpg" alt="Lego">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="https://www.lego.com" target="_blank">LEGO</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>LEGO galerija</h1>
+
+    <div class="gallery">
+        <img src="lego_city.webp" data-set="city" alt="LEGO City">
+        <img src="lego_city.webp" data-set="city" alt="LEGO City">
+        <img src="lego_technic.jpg" data-set="technic" alt="LEGO Technic">
+        <img src="lego_technic.jpg" data-set="technic" alt="LEGO Technic">
+        <img src="lego_friends.jpg" data-set="friends" alt="LEGO Friends">
+        <img src="lego_friends.jpg" data-set="friends" alt="LEGO Friends">
+    </div>
+</main>
+
+<footer>
+    &copy; Benjamin Bešker
+</footer>
+
+</body>
+</html>

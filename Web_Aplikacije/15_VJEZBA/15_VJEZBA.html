@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO Klub Zagreb</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .site-header {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            margin: 20px 0 10px;
+            padding: 10px;
+        }
+
+        .header-image img {
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .menu {
+            background: #333;
+            padding: 8px 0;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 6px 14px;
+            font-size: 14px;
+        }
+
+        .content-area {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            margin-bottom: 25px;
+        }
+
+        .hero {
+            background: #fff7cc;
+            border-left: 4px solid #ffcc00;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            color: #0033cc;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        .lead {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
+        }
+
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+
+        .content-area p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .accent {
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 6px 12px;
+            border: 1px solid blue;
+            color: blue;
+            text-decoration: none;
+            background: #fff;
+        }
+
+        .image-wrap {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .image-wrap img {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .image-wrap span {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .theme-list {
+            list-style: square;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .note {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .schedule caption {
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .schedule th,
+        .schedule td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .schedule th {
+            background: #fff7cc;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="site-header">
+        <div class="header-image">
+            <img src="lego_banner.jpg" alt="LEGO">
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Naslovnica</a></li>
+                <li><a href="#">O klubu</a></li>
+                <li><a href="#">Radionice</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-area">
+
+        <section class="block">
+            <div class="hero">
+                <h1>LEGO Klub Zagreb</h1>
+                <p>Mjesto gdje ideje postaju modeli od kockica</p>
+            </div>
+
+            <p class="lead">
+                LEGO Klub Zagreb okuplja mlade koji vole graditi, istraživati
+                i učiti kroz kreativnu igru.
+            </p>
+        </section>
+
+        <section class="block">
+            <h2 class="section-title">O klubu</h2>
+
+            <p class="info-box">
+                Klub djeluje od 2024. godine te redovito provodi radionice,
+                natjecanja i izložbe LEGO radova.
+            </p>
+
+            <p>
+                Radimo u manjim timovima gdje se razvijaju suradnja,
+                komunikacija i samostalno razmišljanje.
+            </p>
+
+            <p>
+                Fokus je na
+                <span class="accent">kreativnosti</span> i
+                <span class="accent">rješavanju problema</span>
+                kroz raznolike LEGO izazove.
+            </p>
+        </section>
+
+        <section class="block">
+            <h2 class="section-title">Više informacija</h2>
+
+            <p>
+                Dodatnu inspiraciju i ideje možeš pronaći na službenoj LEGO stranici.
+            </p>
+
+            <a class="btn-link" href="https://www.lego.com" target="_blank">
+                LEGO službena stranica
+            </a>
+        </section>
+
+        <section class="block">
+            <h2 class="section-title">Galerija</h2>
+
+            <div class="image-wrap">
+                <img src="lego_set.webp" alt="LEGO model">
+                <span>Rad polaznika napredne radionice</span>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="section-title">LEGO teme</h2>
+
+            <ul class="theme-list">
+                <li>LEGO City – gradske strukture i promet</li>
+                <li>LEGO Technic – mehanizmi i pokret</li>
+                <li>LEGO Star Wars – svemirske avanture</li>
+                <li>LEGO Friends – svakodnevne priče</li>
+            </ul>
+
+            <p class="note">
+                Raspored i prijave dostupni su na oglasnoj ploči škole.
+            </p>
+        </section>
+
+        <section class="block">
+            <h2 class="section-title">Raspored radionica</h2>
+
+            <table class="schedule">
+                <caption>Zimski semestar</caption>
+                <thead>
+                    <tr>
+                        <th>Dan</th>
+                        <th>Vrijeme</th>
+                        <th>Vrsta</th>
+                        <th>Dob</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Utorak</td>
+                        <td>18:00 – 20:00</td>
+                        <td>Osnovna</td>
+                        <td>12–13</td>
+                    </tr>
+                    <tr>
+                        <td>Četvrtak</td>
+                        <td>18:00 – 20:00</td>
+                        <td>Napredna</td>
+                        <td>14–17</td>
+                    </tr>
+                    <tr>
+                        <td>Subota</td>
+                        <td>10:00 – 12:00</td>
+                        <td>Specijalna</td>
+                        <td>Svi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        © Benjamin Bešker
+    </footer>
+
+</div>
+
+</body>
+</html>
